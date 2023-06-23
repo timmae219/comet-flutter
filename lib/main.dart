@@ -14,15 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Comet',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: cometMainColor,
         ),
-        textTheme: Theme.of(context).textTheme.apply(
-              bodyColor: cometTextColor,
-              displayColor: cometTextColor,
-              fontFamily: 'Exo',
-            ),
+        textTheme: cometDefaultTextTheme,
         useMaterial3: true,
       ),
       home: const MainScreen(),

@@ -1,3 +1,4 @@
+import 'package:comet_flutter/constants.dart';
 import 'package:flutter/material.dart';
 
 class CometHeader extends StatelessWidget implements PreferredSizeWidget {
@@ -10,7 +11,11 @@ class CometHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text('Header Placeholder'),
+      title: Text(
+        'Header Placeholder',
+        style: cometDefaultTextTheme.headlineMedium,
+      ),
+      backgroundColor: cometMainColor,
     );
   }
 }
