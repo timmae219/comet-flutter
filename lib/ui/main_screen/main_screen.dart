@@ -1,3 +1,4 @@
+import 'package:comet_flutter/ui/main_screen/widgets/comet_header.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -6,9 +7,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Header Placeholder'),
-      ),
+      appBar: const CometHeader(),
       body: Container(),
     );
   }
